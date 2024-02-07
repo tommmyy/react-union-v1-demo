@@ -14,6 +14,25 @@ curl -L https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/cli/i
 blade init -v 7.4 example
 ```
 
+## Running Liferay locally
+
+1. Run docker container:
+
+```sh
+docker compose up
+```
+
+2. Go to http://localhost:8080/
+
+3. Sign in
+
+```
+test@liferay.com
+test
+```
+
+and change password.
+
 ## Create MVC porlet
 
 Inside workspace folder
