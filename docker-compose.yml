@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  liferay:
+    image: liferay/portal:7.4.3.59-ga59
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./portal-deploy:/etc/liferay/mount/deploy
