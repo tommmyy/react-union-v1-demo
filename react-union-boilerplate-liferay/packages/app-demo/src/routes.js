@@ -1,12 +1,13 @@
-import universal from 'react-universal-component';
+// import universal from 'react-universal-component';
+import { lazy } from 'react';
 
-export default [
+export const routes = [
 	{
 		path: 'hero',
-		component: universal(import('@union-liferay/widget-hero')),
+		component: lazy(() => import('@union-liferay/widget-hero')),
 	},
 	{
 		path: 'content',
-		component: universal(import('@union-liferay/widget-content')),
+		component: lazy(() => import('@union-liferay/widget-content')),
 	},
 ];

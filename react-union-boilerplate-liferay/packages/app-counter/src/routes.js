@@ -1,8 +1,8 @@
-import universal from 'react-universal-component';
+import { lazy } from 'react';
 
 export default [
 	{
 		path: 'counter',
-		component: universal(import('@union-liferay/widget-counter')),
+		component: lazy(() => import('@union-liferay/widget-counter')),
 	},
 ];
