@@ -10,7 +10,9 @@
 
 ## Install blade-cli
 
-https://learn.liferay.com/dxp/latest/en/building-applications/tooling/blade-cli/installing-and-updating-blade-cli.html
+See [blade docs](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/blade-cli/installing-and-updating-blade-cli.html).
+
+Installation:
 
 ```sh
 curl -L https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/cli/installers/local | sh
@@ -21,25 +23,6 @@ curl -L https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/cli/i
 ```sh
 blade init -v 7.4 example
 ```
-
-## Running Liferay locally
-
-1. Run docker container:
-
-```sh
-docker compose up
-```
-
-2. Go to http://localhost:8080/
-
-3. Sign in
-
-```
-test@liferay.com
-test
-```
-
-and change password.
 
 ## Create MVC porlet
 
@@ -73,6 +56,25 @@ blade gw modules:example-portlet:jar
 
 Jar can be found at: `modules/build/example-portlet/libs`
 
+## Running Liferay locally
+
+1. Run docker container:
+
+```sh
+docker compose up
+```
+
+2. Go to http://localhost:8080/
+
+3. Sign in
+
+```
+test@liferay.com
+test
+```
+
+and change password.
+
 ---
 
 # Generation of official Liferay JS portlet
@@ -84,4 +86,8 @@ yo liferay-js
 
 ---
 
-[Slides](https://docs.google.com/presentation/d/1IT1DqcV1o2DDZL3cPvWXfE6bLlv9BTCwfF8ohAytass/edit?usp=sharing)
+# References
+
+- [Slides](https://docs.google.com/presentation/d/1IT1DqcV1o2DDZL3cPvWXfE6bLlv9BTCwfF8ohAytass/edit?usp=sharing)
+- [liferay-npm-bundler](https://github.com/izaera/liferay-frontend-projects/blob/master/projects/js-toolkit/docs/manuals/liferay-npm-bundler.md) - docs
+- [The format of configuration in liferay-npm-bundler projects](https://github.com/izaera/liferay-frontend-projects/blob/master/projects/js-toolkit/docs/reference/configuration-json.md)
