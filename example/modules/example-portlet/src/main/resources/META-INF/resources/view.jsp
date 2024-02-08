@@ -1,5 +1,16 @@
 <%@ include file="/init.jsp" %>
 
-<p>
-	<b><liferay-ui:message key="example.caption"/></b>
-</p>
+<%--suppress JSUnresolvedVariable, JSUnresolvedFunction --%>
+<script type="text/javascript">
+Liferay.Loader.require("app-demo@0.20.0/app-demo");
+</script>
+
+<div id="${ns}content-root"></div>
+<script data-union-widget="content" data-union-container="${ns}content-root" type="application/json">
+{
+	"messages": {
+	"heading": "Welcome",
+	"content": "This is sample server content."
+	}
+}
+</script>

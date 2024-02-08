@@ -1,3 +1,11 @@
+# Project structure
+
+- `./example` - Liferay workspace
+- `./example/modules/example-portlet/` - Spring MVC portlet
+- `./react-union-boilerplate-liferay/` - FE project
+- `./react-union-boilerplate-liferay/packages/app-*` - App shells
+- `./react-union-boilerplate-liferay/packages/widget-*` - Widgets
+
 # Liferay workspace
 
 ## Install blade-cli
@@ -63,7 +71,7 @@ Or
 blade gw modules:example-portlet:jar
 ```
 
-Jar can be found at: `modules/example-portlet/libs`
+Jar can be found at: `modules/build/example-portlet/libs`
 
 ---
 
@@ -73,3 +81,7 @@ Jar can be found at: `modules/example-portlet/libs`
 yarn global add yo generator-liferay-js
 yo liferay-js
 ```
+
+---
+
+[Slides](https://docs.google.com/presentation/d/1IT1DqcV1o2DDZL3cPvWXfE6bLlv9BTCwfF8ohAytass/edit?usp=sharing)

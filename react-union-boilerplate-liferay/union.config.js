@@ -4,7 +4,7 @@ const getConfig = (appName) => ({
 	publicPath: `/o/${appName}/build/`,
 	proxy: {
 		// set up the URL of your locally running Liferay
-		target: 'http://localhost:8081',
+		target: 'http://localhost:8080',
 		// set up the public path of Liferay AMD loader
 		publicPath: `/o/${appName}/build/`,
 	},

@@ -1,1 +1,3 @@
 portal-deploy
+**/build
+**/dist
